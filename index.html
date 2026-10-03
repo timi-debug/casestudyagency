@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Case study: 100+ sales meetings a quarter for a marketing agency owner | InLead</title>
+<meta name="description" content="A marketing agency owner was already publishing and getting nothing back. We changed what went out and who saw it. 8 calls in his first week, 100+ sales meetings a quarter, and a year and a half as a client.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+  :root, :root[data-theme="dark"], :root[data-theme="light"] {
+    --paper: #0b1a3a;
+    --wash: rgba(255,255,255,.07);
+    --ink: #ffffff;
+    --body: #b4c3e6;
+    --muted: #8fa1cc;
+    --rule: rgba(255,255,255,.14);
+    --blue: #7aa5ff;
+    --blue-soft: rgba(122,165,255,.18);
+    --hero: #0b1a3a;
+    --hero-2: #12295c;
+    --hero-text: #ffffff;
+    --hero-muted: #b4c3e6;
+    --hero-tile: rgba(255,255,255,.07);
+    --hero-line: rgba(255,255,255,.14);
+    --frame: rgba(255,255,255,.14);
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: #050c1f; color: var(--body);
+    font-family: "Plus Jakarta Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.0625rem; line-height: 1.65;
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  .wrap { max-width: 68rem; margin: 0 auto; padding: 0 1.5rem; }
+  .narrow { max-width: 44rem; }
+
+  /* Hero */
+  .hero {
+    color: var(--hero-text); padding: 1.5rem 0 4.5rem; position: relative; overflow: hidden;
+    background:
+      radial-gradient(52rem 34rem at 82% 38%, rgba(47,107,255,.42), transparent 62%),
+      radial-gradient(36rem 26rem at 0% 0%, rgba(47,107,255,.16), transparent 60%),
+      linear-gradient(180deg, #071230 0%, #050c1f 100%);
+    border-bottom: 1px solid rgba(255,255,255,.08);
+  }
+  .topbar {
+    display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap;
+    font-size: .9375rem; color: var(--hero-muted); padding-bottom: 4rem;
+  }
+  .brand { font-weight: 800; font-size: 1.25rem; color: #fff; letter-spacing: -.02em; }
+  .brand span { color: #7aa5ff; }
+  .who {
+    display: inline-block; font-size: .9375rem; font-weight: 600; color: #cfe0ff;
+    background: var(--hero-tile); border: 1px solid var(--hero-line);
+    padding: .4rem .9rem; border-radius: 999px; margin: 0 0 1.5rem;
+  }
+  h1 {
+    font-weight: 800; font-size: clamp(2.4rem, 6.2vw, 4.25rem); line-height: 1.04;
+    letter-spacing: -.035em; margin: 0 0 1.5rem; max-width: 19ch; color: #fff;
+  }
+  .lede { font-size: 1.1875rem; color: var(--hero-muted); max-width: 40rem; margin: 0; }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 3rem; }
+  .stat { background: var(--hero-tile); border: 1px solid var(--hero-line); border-radius: 1rem; padding: 1.4rem 1.25rem; }
+  .stat b { display: block; font-size: clamp(1.9rem, 3.4vw, 2.6rem); font-weight: 800; letter-spacing: -.03em; line-height: 1; color: #fff; }
+  .stat span { display: block; margin-top: .6rem; font-size: .9375rem; color: var(--hero-muted); line-height: 1.4; }
+
+  .hero-grid { display: grid; grid-template-columns: minmax(0,1.05fr) minmax(0,.95fr); gap: 3.5rem; align-items: center; }
+  .hero-grid .stats { grid-template-columns: 1fr 1fr; margin-top: 0; }
+  .hero-grid h1 { font-size: clamp(2.3rem, 4.6vw, 3.6rem); max-width: none; }
+  .hero-shot { margin-top: 1rem; }
+  .hero-shot figcaption { color: var(--hero-muted); }
+  .results { align-items: start; }
+  @media (max-width: 52rem) { .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
+
+  section { padding: 4.5rem 0 0; }
+  h2 { font-weight: 800; font-size: clamp(1.6rem, 3vw, 2.1rem); line-height: 1.15; letter-spacing: -.025em; color: var(--ink); margin: 0 0 1.25rem; }
+  p { margin: 0 0 1rem; }
+
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .card { background: var(--hero-tile); border: 1px solid var(--hero-line); border-radius: 1rem; padding: 2rem; }
+  .card h2 { font-size: 1.5rem; }
+  .card p:last-child { margin-bottom: 0; }
+
+  /* Steps + post */
+  .ran { display: grid; grid-template-columns: minmax(0,1.25fr) minmax(0,.85fr); gap: 3rem; align-items: start; }
+  ol.steps { list-style: none; counter-reset: s; padding: 0; margin: 0; }
+  ol.steps li { counter-increment: s; position: relative; padding: 0 0 1.5rem 3.25rem; }
+  ol.steps li:last-child { padding-bottom: 0; }
+  ol.steps li::before {
+    content: counter(s); position: absolute; left: 0; top: .1rem;
+    width: 2.1rem; height: 2.1rem; border-radius: 50%;
+    background: var(--blue-soft); color: var(--blue);
+    display: grid; place-items: center; font-weight: 700; font-size: .9375rem;
+  }
+  ol.steps li::after {
+    content: ""; position: absolute; left: 1.02rem; top: 2.4rem; bottom: .2rem; width: 2px; background: var(--rule);
+  }
+  ol.steps li:last-child::after { display: none; }
+  ol.steps b { color: var(--ink); font-weight: 700; display: block; }
+
+  figure { margin: 0; }
+  .shot { border-radius: 1rem; overflow: hidden; border: 1px solid var(--rule); box-shadow: 0 30px 70px -30px rgba(0,0,0,.7); background: #fff; }
+  .shot.dark { background: #111; border-color: var(--frame); }
+  figcaption { font-size: .9375rem; color: var(--muted); margin-top: .9rem; line-height: 1.5; }
+  .sticky { position: sticky; top: 1.5rem; }
+
+  .band { background: rgba(255,255,255,.04); border-top: 1px solid var(--hero-line); border-bottom: 1px solid var(--hero-line); margin-top: 4.5rem; padding: 4.5rem 0; }
+  .band section { padding: 0; }
+
+  /* Results */
+  .results { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 3.5rem; }
+  .ledger { border-top: 1px solid var(--hero-line); margin-top: 1.5rem; }
+  .row { display: grid; grid-template-columns: 7.5rem 1fr; gap: 1.25rem; padding: 1.1rem 0; border-bottom: 1px solid var(--rule); align-items: baseline; }
+  .fig { font-weight: 800; font-size: 1.75rem; letter-spacing: -.03em; color: #fff; line-height: 1; }
+  .row p { margin: 0; }
+  .row b { color: var(--ink); }
+
+  .cta { background: var(--hero-tile); border: 1px solid var(--hero-line); color: #fff; border-radius: 1.5rem; padding: 3rem; margin: 4.5rem 0 0; }
+  .cta h2 { color: #fff; }
+  .cta p { color: var(--hero-muted); max-width: 38rem; }
+  a.button { display: inline-block; margin-top: .75rem; padding: .95rem 1.6rem; border-radius: 999px; background: #fff; color: #0b1a3a; text-decoration: none; font-weight: 700; }
+  a.button:focus-visible { outline: 3px solid #7aa5ff; outline-offset: 3px; }
+  .sig { margin-top: 1.75rem !important; font-size: .9375rem; }
+
+  .fine { font-size: .875rem; color: var(--muted); max-width: 44rem; padding: 2.5rem 0 4rem; margin: 0; }
+
+  @media (max-width: 52rem) {
+    .stats { grid-template-columns: 1fr 1fr; }
+    .two, .ran, .results { grid-template-columns: 1fr; gap: 2rem; }
+    .sticky { position: static; max-width: 26rem; }
+    .topbar { padding-bottom: 2.5rem; }
+    .cta { padding: 2rem 1.5rem; }
+    section { padding-top: 3.5rem; }
+  }
+  @media (max-width: 30rem) { .row { grid-template-columns: 1fr; gap: .35rem; } }
+  /* hero contrast */
+  .who { display: inline-flex; align-items: center; gap: .6rem; background: rgba(47,107,255,.16); border-color: rgba(122,165,255,.45); color: #dbe7ff; }
+  .who i { width: .5rem; height: .5rem; border-radius: 50%; background: #5b8dff; box-shadow: 0 0 0 4px rgba(91,141,255,.25); flex: none; }
+  .hero-grid { align-items: center; }
+  .hero-grid h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+  h1 { text-wrap: balance; }
+  h1 span { color: #7aa5ff; display: block; text-wrap: balance; }
+  .lede { color: #c6d3f0; }
+  .lede b { color: #fff; font-weight: 700; }
+  .hero-actions { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 2rem; }
+  .hero-actions .button { margin-top: 0; box-shadow: 0 14px 40px -12px rgba(255,255,255,.35); }
+  a.ghost { color: #fff; font-weight: 600; text-decoration: underline; text-decoration-color: rgba(255,255,255,.4); text-underline-offset: .3em; }
+  a.ghost:hover { text-decoration-color: #fff; }
+  .stat { background: rgba(9,20,48,.72); border: 1px solid rgba(122,165,255,.28); backdrop-filter: blur(6px); }
+  .stat b { background: linear-gradient(180deg, #ffffff 30%, #9dbcff 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .stat.primary { background: linear-gradient(135deg, #3b7bff 0%, #1d4ed8 100%); border-color: transparent; box-shadow: 0 24px 50px -20px rgba(47,107,255,.8); }
+  .stat.primary b { background: none; color: #fff; }
+  .stat.primary span { color: #e3ecff; }
+  .hero-shot .shot { border: 1px solid rgba(255,255,255,.28); box-shadow: 0 40px 90px -30px rgba(47,107,255,.75), 0 0 0 6px rgba(255,255,255,.04); }
+  /* rest of page: more separation between cards and background */
+  .card { background: #0c1a3d; border-color: rgba(122,165,255,.22); }
+  .card h2 { color: #fff; }
+  .band { background: #081330; }
+  ol.steps li::before { background: #1d4ed8; color: #fff; }
+  .fig { color: #7aa5ff !important; }
+  .cta { background: linear-gradient(135deg, #1d4ed8 0%, #0c1a3d 85%); border-color: rgba(122,165,255,.35); }
+  .cta p { color: #dbe6ff; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">In<span>Lead</span></div>
+      <div>Case study</div>
+    </div>
+
+    <div class="hero-grid">
+      <div>
+        <p class="who"><i></i> Marketing agency owner, a year and a half with us</p>
+        <h1>100+ sales meetings a quarter <span>from his own LinkedIn account</span></h1>
+        <p class="lede">He was already publishing and getting nothing back. We changed what went out and who was seeing it. <b>8 calls in his first week</b>, and he is still a client a year and a half later.</p>
+        <div class="hero-actions">
+          <a class="button" href="https://calendly.com/timi-inboundleads/30min">Book the audit call</a>
+          <a class="ghost" href="#ran">See what we ran</a>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat primary"><b>100+</b><span>Sales meetings a quarter</span></div>
+        <div class="stat"><b>8</b><span>Calls in his first week</span></div>
+        <div class="stat"><b>53k</b><span>Followers, up from about 5k</span></div>
+        <div class="stat"><b>18 mo</b><span>Still a client</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<div class="wrap">
+  <section>
+    <div class="two">
+      <div class="card">
+        <h2>The client</h2>
+        <p>Cem Atik runs <a class="ghost" href="https://www.linkedin.com/in/cem-atik/">Harucon Ventures</a> out of D&uuml;sseldorf, a marketing agency for e-commerce brands. He sells to those brands and the people who own them.</p>
+        <p>The figures on this page come from his own reporting to us and from the account itself.</p>
+      </div>
+      <div class="card">
+        <h2>Where he started</h2>
+        <p>About 5,000 followers and already publishing regularly. Advice, mostly. People read it and moved on.</p>
+        <p>Nothing in his calendar was coming from any of it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <figure>
+      <div class="shot"><img src="cem-profile.png" alt="Cem Atik's LinkedIn profile. Harucon Ventures, marketing for e-commerce brands, Dusseldorf, 53,143 followers."></div>
+      <figcaption>His profile as it runs today. The account is public if you want to look through it.</figcaption>
+    </figure>
+  </section>
+</div>
+
+<div class="band">
+  <div class="wrap">
+    <section id="ran">
+      <div class="ran">
+        <div>
+          <h2>What we ran</h2>
+          <ol class="steps">
+            <li><b>Wrote the brief</b>Company type, size, the person who signs and what a client worth keeping looks like. Every meeting was later checked against it.</li>
+            <li><b>Rebuilt the profile</b>In the words his buyers use when they describe the problem he solves, not the words agencies use to describe themselves.</li>
+            <li><b>Built the target lists</b>One per buyer type, gated by company type, size and geography.</li>
+            <li><b>Sent connection requests with no message</b>Once a request is accepted, what he publishes shows up in that person's feed.</li>
+            <li><b>Changed what went out</b>His own client results instead of advice. What the client came in with, what was done, and what it returned.</li>
+            <li><b>Sent one message per contact</b>Only after the posts had been running, so it arrived from someone they already recognised.</li>
+            <li><b>Qualified every reply in the inbox</b>Company, budget, timing and who signs. Only the ones that cleared the brief went to his calendar.</li>
+          </ol>
+        </div>
+
+        <figure class="sticky">
+          <div class="shot"><img src="cem-featured-posts.png" alt="Three featured posts from the account, with 9,857, 2,894 and 4,561 comments."></div>
+          <figcaption>Three of the posts the account runs now. The comment counts are what the inbox is built on.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="wrap">
+  <section>
+    <div class="results">
+      <div>
+        <h2>Results</h2>
+        <p>He came to us with an audience that read what he wrote and never got in touch. The first change was what went out. The second was who was seeing it.</p>
+        <div class="ledger">
+          <div class="row"><div class="fig">8</div><p><b>Calls in his first week.</b> Off what he published, not off a list.</p></div>
+          <div class="row"><div class="fig">100+</div><p><b>Sales meetings a quarter.</b> Where the account runs today.</p></div>
+          <div class="row"><div class="fig">53,000</div><p><b>Followers today</b>, up from about 5,000. The people who buy from him are in that number, which is the part that matters.</p></div>
+          <div class="row"><div class="fig">4.8M</div><p><b>Impressions</b> on the account in twelve months.</p></div>
+          <div class="row"><div class="fig">18 mo</div><p><b>Still a client.</b></p></div>
+        </div>
+      </div>
+
+      <div>
+        <h2>What changed</h2>
+        <div class="two" style="grid-template-columns: 1fr; gap: 1rem;">
+          <div class="card">
+            <h2>Before</h2>
+            <p>Advice posts, written for everyone. An audience that agreed with him and did nothing. New work arriving through his own network, when it arrived.</p>
+          </div>
+          <div class="card">
+            <h2>After</h2>
+            <p>His own client results, written for one buyer. That buyer in the audience on purpose. One message each, sent after they already knew who he was.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="two">
+      <figure>
+        <div class="shot"><img src="cem-impressions.png" alt="Cumulative impressions on the account rising to 4,861,596, with an arrow marking where InLead started."></div>
+        <figcaption>Cumulative impressions on the account. The arrow is where we started.</figcaption>
+      </figure>
+      <figure>
+        <div class="shot dark"><img src="cem-whatsapp.png" alt="A WhatsApp exchange where the client reports the first call booked and a follower count of 8,600."></div>
+        <figcaption>The first call came off a post with 8 likes. He was at 8,600 followers at the time.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="narrow">
+    <h2>What it took from him</h2>
+    <p>A working session to set the brief, approval of the posts before they went out, and the calls themselves. We wrote the posts, built the lists, sent the requests and messages, and handled the inbox.</p>
+    <p>No ads. No cold email.</p>
+  </section>
+
+  <section>
+    <div class="cta">
+      <h2>How we work with agency owners</h2>
+      <p>90 days, run end to end. We write what goes out, build the lists, send the requests and messages, and qualify every reply before it reaches your calendar.</p>
+      <!-- OFFER AND PRICING FOR AGENCIES: not on the page yet. Tell me the terms and I will add them here, the way Roy's page states its fee. -->
+      <h2 style="margin-top:2.5rem">Book a 30 minute audit call</h2>
+      <p>I go through your profile, what you have published recently and where your clients come from today. You leave with what I would change, the buyers we would put you in front of, and the first posts we would run.</p>
+      <p>You keep the audit whether or not we work together.</p>
+      <a class="button" href="https://calendly.com/timi-inboundleads/30min">Book the audit call</a>
+      <p class="sig">Timi Merivirta, founder, InLead<br>timi@inleadagency.com</p>
+    </div>
+  </section>
+
+  <p class="fine">Figures were reported to us by the client. He is not named here. Follower counts and meeting volumes describe one account and are not a prediction of what another account will do.</p>
+</div>
+
+</main>
+</body>
+</html>
